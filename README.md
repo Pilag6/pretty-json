@@ -10,12 +10,12 @@
 
 ## 🎯 Features
 
-- 🖥️ **Web-based viewer** – Instantly view JSON in a browser.
-- 🌙 **Dark/Light theme toggle** – Eye-friendly modes.
+- 🖥️ **Backend and frontend support** – Use it in Node.js or in the browser.
+- 🌓 **Dark/Light theme toggle** – Built-in accessibility toggle.
 - ➕ **Collapsible objects and arrays** – Navigate large structures easily.
-- 🎯 **Syntax highlighting** – Keys and values color-coded by type.
-- 🧠 **Minimal setup** – Just one function to serve and open.
-- 🚀 **Fast and lightweight** – No dependencies, zero config.
+- 🎨 **Syntax highlighting** – Keys and values styled by type.
+- 🧠 **Zero config** – Just call one function and you're done.
+- 🚀 **Fast and dependency-free** – No external libraries required.
 
 ---
 
@@ -25,7 +25,7 @@
 npm install @pilag6/pretty-json
 ```
 
-## 🚀 Usage
+## 🚀 Backend Usage (Node.js)
 
 You can use it in any TypeScript or Node.js project to visualize JSON data:
 
@@ -48,13 +48,62 @@ serveJsonPretty(data); // Opens in browser at http://localhost:1984
 serveJsonPretty(data, 3000); // Opens in browser at http://localhost:3000
 ```
 
+## 🌐 Frontend Usage (React/Vue/Vanilla)
+
+✅ React Example
+
+```typescript
+import { renderJsonPretty } from '@pilag6/pretty-json';
+
+const App = () => {
+  const handleClick = () => {
+    const json = {
+      user: 'John',
+      roles: ['admin', 'editor'],
+    };
+    renderJsonPretty(json); // Opens a new tab with styled JSON
+  };
+
+  return <button onClick={handleClick}>View JSON</button>;
+};
+export default App;
+```
+
+✅ Vue Example
+
+```typescript
+<template>
+  <button @click="showJson">View JSON</button>
+</template>
+
+<script setup lang="ts">
+import { renderJsonPretty } from '@pilag6/pretty-json';
+
+const showJson = () => {
+  const json = {
+    name: 'Jane',
+    active: true,
+    nested: { a: 1, b: [2, 3] },
+  };
+  renderJsonPretty(json); // Opens JSON in a new tab
+};
+</script>
+```
+
 ## 🛠️ API
-### `serveJsonPretty(data: object, port?: number): void`
+### `serveJsonPretty(data: object, port?: number): void` — (Backend)
 
 | Param | Type    | Description                                         |
 |-------|---------|-----------------------------------------------------|
-| data  | object  | The JSON data you want to inspect                   |
+| data  | object  | JSON to serve in a browser                  |
 | port  | number  | (Optional) Port to serve on (default: `1984`)       |
+
+### `renderJsonPretty(data: object): void` — (Frontend)
+| Param | Type    | Description                                         |
+|-------|---------|-----------------------------------------------------|
+| data  | object  | JSON to render in a new browser tab                  |
+
+---
 
 **Permissions & Security**
 
@@ -62,6 +111,17 @@ serveJsonPretty(data, 3000); // Opens in browser at http://localhost:3000
 - Runs a local-only HTTP server (no external connections allowed).
 
 ---
+
+## 💡 Why this exists?
+
+Sometimes you just want to see JSON structured and styled beautifully, either locally or from a browser-based app, without pasting it into third-party tools. This package solves that, both for frontend and backend.
+
+## 🧪 Works great with
+
+- REST API responses
+- Local development
+- Debugging deep JSON objects 
+- Teaching JSON structure
 
 ## 💡 Inspiration
 
