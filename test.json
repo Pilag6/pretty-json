@@ -1,0 +1,99 @@
+{
+  "id": 1234567890,
+  "name": "Proyecto JSON Viewer",
+  "description": "Ejemplo complejo para pruebas 🚀",
+  "active": true,
+  "createdAt": "2025-08-14T12:34:56Z",
+  "tags": ["json", "viewer", "test", "complejo", "🔥"],
+  "owner": {
+    "id": 987654321,
+    "username": "juan_dev",
+    "email": "juan.dev@example.com",
+    "roles": ["admin", "developer"],
+    "profile": {
+      "firstName": "Juan",
+      "lastName": "Pérez",
+      "dob": "1990-05-15",
+      "address": {
+        "street": "Av. Siempre Viva 742",
+        "city": "Springfield",
+        "zip": "12345",
+        "geo": {
+          "lat": -34.603722,
+          "lng": -58.381592
+        }
+      },
+      "preferences": {
+        "theme": "dark",
+        "language": "es",
+        "notifications": {
+          "email": true,
+          "sms": false,
+          "push": true
+        }
+      }
+    }
+  },
+  "statistics": {
+    "views": 158930,
+    "likes": 4320,
+    "comments": 256,
+    "rating": 4.75,
+    "lastUpdate": "2025-08-13T09:00:00Z"
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Configurar entorno",
+      "completed": true,
+      "dueDate": null
+    },
+    {
+      "id": 2,
+      "title": "Implementar JSON Viewer",
+      "completed": false,
+      "dueDate": "2025-08-20"
+    },
+    {
+      "id": 3,
+      "title": "Test con datos complejos",
+      "completed": false,
+      "subtasks": [
+        { "id": "3.1", "title": "Datos anidados", "done": true },
+        { "id": "3.2", "title": "Caracteres especiales", "done": false }
+      ]
+    }
+  ],
+  "settings": {
+    "refreshInterval": 30,
+    "maxItems": 50,
+    "features": {
+      "beta": ["darkMode", "exportCSV"],
+      "stable": ["search", "pagination"]
+    }
+  },
+  "history": [
+    {
+      "date": "2025-08-01",
+      "changes": [
+        { "field": "name", "oldValue": "Test App", "newValue": "Proyecto JSON Viewer" },
+        { "field": "active", "oldValue": false, "newValue": true }
+      ]
+    },
+    {
+      "date": "2025-08-10",
+      "changes": [
+        { "field": "statistics.views", "oldValue": 150000, "newValue": 158930 }
+      ]
+    }
+  ],
+  "attachments": [
+    { "type": "image", "url": "https://example.com/image.png" },
+    { "type": "pdf", "url": "https://example.com/doc.pdf" }
+  ],
+  "meta": {
+    "version": "1.0.0",
+    "checksum": "a3f5b2c8e9",
+    "notes": "Este JSON es solo para pruebas y contiene datos ficticios."
+  }
+}

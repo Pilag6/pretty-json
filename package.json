@@ -1,0 +1,37 @@
+{
+	"name": "@pilag6/pretty-json",
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Open any JSON object in a browser with pretty formatting",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsup src/index.ts --format cjs,esm --dts",
+		"prepare": "npm run build",
+		"patch": "npm version patch"
+	},
+	"keywords": [
+		"json",
+		"viewer",
+		"pretty",
+		"debug",
+		"tool"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Pilag6/pretty-json.git"
+	},
+	"homepage": "https://github.com/Pilag6/pretty-json#readme",
+	"bugs": {
+		"url": "https://github.com/Pilag6/pretty-json/issues"
+	},
+	"author": "Pila Gonzalez",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "^24.2.1",
+		"ts-node": "^10.9.2",
+		"tsup": "^8.5.0",
+		"typescript": "^5.9.2"
+	}
+}
