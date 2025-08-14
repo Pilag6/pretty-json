@@ -1,6 +1,6 @@
 {
 	"name": "@pilag6/pretty-json",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"description": "Open any JSON object in a browser with pretty formatting",
 	"main": "dist/index.js",
