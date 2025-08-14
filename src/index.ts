@@ -37,7 +37,7 @@ function generateHtml(jsonStr: string): string {
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>JSON Viewer</title>
+  <title>Pretty JSON Viewer</title>
   <style>
     :root {
       --bg-dark: #1e1e1e;
