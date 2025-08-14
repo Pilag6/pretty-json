@@ -1,4 +1,8 @@
-# 📦 @pilag6/pretty-json
+# 📦 Pretty JSON
+
+[![npm version](https://img.shields.io/npm/v/@pilag6/pretty-json.svg)](https://www.npmjs.com/package/@pilag6/pretty-json)
+[![npm downloads](https://img.shields.io/npm/dm/@pilag6/pretty-json.svg)](https://www.npmjs.com/package/@pilag6/pretty-json)
+[![GitHub license](https://img.shields.io/github/license/pilag6/pretty-json.svg)](LICENSE)
 
 > Open any JSON object in your browser with pretty formatting, collapsible objects, dark/light theme, and line-by-line indentation. Ideal for debugging and quick inspection of JSON data.
 
